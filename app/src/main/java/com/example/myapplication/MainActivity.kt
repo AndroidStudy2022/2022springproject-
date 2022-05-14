@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         SettingButton.setOnClickListener {
-            val intent = Intent(this, subactivity::class.java)
+            val intent = Intent(this, Subactivity::class.java)
             startActivity(intent)
         }
     }
