@@ -7,27 +7,95 @@
     tools:context=".LoginActivity">
 
     <TextView
+        android:id="@+id/LoginPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is Login page"
-        android:textSize="40dp"
+        android:text="@string/this_is_login_page"
+        android:textSize="40sp"
         android:layout_marginTop="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
-
     <Button
         android:id="@+id/Mainpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to Main Page"
+        android:text="@string/login"
         android:layout_marginBottom="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-56dp">
+
+        <EditText
+            android:id="@+id/logInID"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="210dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/user_id"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textColor="#374DC8"
+            app:helperTextTextColor="#C81010"
+            tools:helperText="Require*" />
+
+        <EditText
+            android:id="@+id/logInPW"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="#374DC8"
+            app:helperText="Required*"
+            app:helperTextTextColor="#C81010" />
+
+    </LinearLayout>
+
+
+    <TextView
+    android:id="@+id/txtID"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/id"
+    android:textSize="40sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="75dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txtPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pw"
+        android:textSize="35sp"
+        android:layout_marginTop="270dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

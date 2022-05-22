@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="password">Password</string>
+    <string name="pw">PW:</string>
+    <string name="user_id">User ID</string>
+    <string name="login">Login</string>
+    <string name="this_is_login_page">This is Login page</string>
+    <string name="id">ID:</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="type_in_your_user_name">Type In Your User Name</string>
+    <string name="type_in_password">Type In Password</string>
+    <string name="type_in_email">Type In Email</string>
 </resources>
