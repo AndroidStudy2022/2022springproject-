@@ -18,7 +18,7 @@ public class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val CountingNum = findViewById<TextView>(R.id.CountingNum)
-        val btn_event =findViewById<Button>(R.id.addBTN)
+        val btn_event =findViewById<ImageButton>(R.id.addBtn)
         var count = 0
 
         SettingButton.setOnClickListener {
@@ -29,8 +29,6 @@ public class MainActivity : AppCompatActivity() {
             count++
             CountingNum.text = count.toString()
         }
-
-
         }
     }
 
